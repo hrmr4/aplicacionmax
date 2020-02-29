@@ -1,0 +1,27 @@
+<div ng-controller="LoginCtrl">
+	<ion-view view-title="Logiin">
+	  <ion-content class="Login">
+
+	  	<h1>My First App</h1>
+
+	    <div class="list">
+		  <label class="item item-input item-floating-label">
+		    <span class="input-label">Username</span>
+		    <input type="text" ng-model="Login.Username" placeholder="Username">
+		  </label>
+		  <label class="item item-input item-floating-label">
+		    <span class="input-label">Password</span>
+		    <input type="password" ng-model="Login.Password" placeholder="Password">
+		  </label>
+		</div>
+
+		<button ng-click="Obtener(Login)" class="button button-outline button-light">
+		  Login
+		</button>
+		<button class="button button-clear button-light " ui-sref="register">
+		  Sign Up
+		</button>
+
+	  </ion-content>
+	</ion-view>
+</div>

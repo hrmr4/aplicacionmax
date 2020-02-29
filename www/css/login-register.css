@@ -1,0 +1,67 @@
+.Login{
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/bg.png);
+	-webkit-background-size: cover;
+}
+
+	.Login h1{
+		margin-top: 30%;
+		text-align: center;
+		color: #FFF;
+	}
+
+	.Login .list{
+		padding: 0 17%;
+	}
+
+		.Login .list .input-label, .button{
+			color: #FFF
+		}
+
+		.Login .list label{
+			border: 0;
+			border-bottom: 1px solid white;
+			margin-bottom: 2%;
+		}
+
+	.Login button{
+		display: flex;
+		margin: 0 auto;
+	}
+
+	.Login .button-outline{
+		margin-top: 15%;
+	} 	
+
+.Register{
+	background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../img/bgRegister.jpg);
+	-webkit-background-size: cover;
+}
+
+	.Register h1{
+		margin-top: 25%;
+		text-align: center;
+		color: #FFF;
+	}
+
+	.Register .list{
+		padding: 0 17%;
+	}
+
+		.Register .list .input-label, .button{
+			color: #FFF
+		}
+
+		.Register .list label{
+			border: 0;
+			border-bottom: 1px solid white;
+			margin-bottom: 2%;
+		}
+
+	.Register button{
+		display: flex;
+		margin: 0 auto;
+	}
+
+	.Register .button-outline{
+		margin-top: 15%;
+	} 	
