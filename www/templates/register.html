@@ -7,19 +7,19 @@
 	    <div class="list">
 		  <label class="item item-input item-floating-label">
 		    <span class="input-label">Username</span>
-		    <input type="text" ng-model="Register.Username" placeholder="Username">
+		    <input type="text" ng-model="r.Username" placeholder="Username">
 		  </label>
 		  <label class="item item-input item-floating-label">
 		    <span class="input-label">Email</span>
-		    <input type="Email" ng-model="Register.Email" placeholder="Email">
+		    <input type="Email" ng-model="r.Email" placeholder="Email">
 		  </label>
 		  <label class="item item-input item-floating-label">
 		    <span class="input-label">Password</span>
-		    <input type="password" ng-model="Register.Password" placeholder="Password">
+		    <input type="password" ng-model="r.Password" placeholder="Password">
 		  </label>
 		</div>
 
-		<button ng-click="obtener(Register)" class="button button-outline button-light">
+		<button ng-click="obtener(r)" class="button button-outline button-light">
 		  Register
 		</button>
 		<button class="button button-clear button-light" ui-sref="login">

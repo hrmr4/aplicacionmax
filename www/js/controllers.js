@@ -11,13 +11,13 @@ angular.module('starter.controllers', [])
   
 .controller('registerCtrl', function($scope) {
   var database = firebase.database();
-  $scope.obtener = function(Register){
-    firebase.auth().createUserWithEmailAndPassword(Register.Email, Register.Password).then(function a (y){
-    Swal("Su cuenta ha sido registrada correctamente")
-    firebase.database().ref("/usuario").set({
-      correo: Register.Email,
-      contrasena: Register.Password
-    });
+  $scope.obtener = function(r){
+    firebase.auth().createUserWithEmailAndPassword(r.Email, r.Password).then(function a(y){
+    swal("Su cuenta ha sido registrada correctamente")
+      firebase.database().ref("usuario").push({
+        correo: r.Email,
+        id: y.user.uid
+      });
     firebase.auth().signOut().then(function() {
     }).catch(function(error){
 
