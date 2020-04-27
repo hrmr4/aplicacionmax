@@ -1,5 +1,5 @@
 .Login{
-	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/bg.png);
+	background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../img/bg.jpg);
 	-webkit-background-size: cover;
 }
 
@@ -17,17 +17,29 @@
 			color: #FFF
 		}
 
-		.Login .list label{
+		.Login label{
 			border: 0;
-			border-bottom: 1px solid white;
+			width: 100% !important;
+			border-bottom: 1px solid gray;
 			margin-bottom: 2%;
 		}
-
-	.Login button{
+.Login button{
+		text-align: center;
 		display: flex;
 		margin: 0 auto;
+		
 	}
-
+	.Login .boton{
+		justify-content: center;
+		text-align: center;
+		display: flex;
+		margin: 0 auto;
+		background-color: #A20D0D;
+		color: white;
+		width: 200px !important;
+		height:27px !important;
+		border-radius: 10px !important;
+	}
 	.Login .button-outline{
 		margin-top: 15%;
 	} 	
@@ -62,6 +74,17 @@
 		margin: 0 auto;
 	}
 
+	.Register .boton{
+		justify-content: center;
+		text-align: center;
+		display: flex;
+		margin: 0 auto;
+		background-color: #A20D0D;
+		color: white;
+		width: 200px !important;
+		height:27px !important;
+		border-radius: 10px !important;
+	}
 	.Register .button-outline{
 		margin-top: 15%;
 	} 	

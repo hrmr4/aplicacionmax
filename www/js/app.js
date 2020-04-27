@@ -63,6 +63,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     templateUrl: 'templates/register.html',
     controller: 'registerCtrl'
   })
+  .state('welcome', {
+    url: '/welcome',
+    templateUrl: 'templates/welcome.html',
+    controller: 'welcomeCtrl'
+  })
 
   // setup an abstract state for the tabs directive
   .state("tab",{
@@ -114,6 +119,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('register');
+  $urlRouterProvider.otherwise('welcome');
 
 });

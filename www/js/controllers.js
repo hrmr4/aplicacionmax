@@ -32,6 +32,9 @@ angular.module('starter.controllers', [])
   }
 })
 
+  .controller('welcomeCtrl', function($scope) {
+  })
+
 .controller('DashCtrl', function($scope,$rootScope) {
   $rootScope.Categorias = [
     {

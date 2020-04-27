@@ -2,28 +2,28 @@
 	<ion-view view-title="Register">
 	  <ion-content class="Register">
 
-	  	<h1>My First App</h1>
+	  	<h1>Registrate</h1>
 
 	    <div class="list">
 		  <label class="item item-input item-floating-label">
 		    <span class="input-label">Username</span>
-		    <input type="text" ng-model="r.Username" placeholder="Username">
+		    <input type="text" ng-model="r.Username" placeholder="USUARIO">
 		  </label>
 		  <label class="item item-input item-floating-label">
 		    <span class="input-label">Email</span>
-		    <input type="Email" ng-model="r.Email" placeholder="Email">
+		    <input type="Email" ng-model="r.Email" placeholder="CORREO">
 		  </label>
 		  <label class="item item-input item-floating-label">
 		    <span class="input-label">Password</span>
-		    <input type="password" ng-model="r.Password" placeholder="Password">
+		    <input type="password" ng-model="r.Password" placeholder="CONTRASEÑA">
 		  </label>
 		</div>
 
-		<button ng-click="obtener(r)" class="button button-outline button-light">
-		  Register
+		<button ng-click="obtener(r)" class="boton button-outline button-light">
+		  Continuar
 		</button>
 		<button class="button button-clear button-light" ui-sref="login">
-		  <span>I already have an account</span>
+		  <span>¿Ya tienes una cuenta? <b>Iniciar</b></span>
 		</button>
 
 	  </ion-content>

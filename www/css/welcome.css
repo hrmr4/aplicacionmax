@@ -1,0 +1,32 @@
+.welcome{
+	background: url(../img/fondo.jpg);
+	height: 600px !important;
+}
+.centrado{
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}	
+.redonda{
+	border-radius: 25px !important;
+}
+.abajo{
+	padding-top: 10% !important;
+}
+.blanco{
+	background-color: white;
+	height: 200px;
+	position: absolute !important;
+	z-index: 4 !important;
+	top: 60% !important;
+}
+.texto{
+	font-size: 22px;
+}
+.button{
+		text-align: center;
+		display: flex;
+		margin: 0 auto;	
+	}
+
