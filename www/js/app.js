@@ -88,6 +88,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  .state('tab.Products', {
+      url: '/Products',
+      views: {
+        'tab-Products': {
+          templateUrl: 'templates/products.html',
+          controller: 'ProductsCtrl'
+        }
+      }
+    })
+
   .state('tab.chats', {
       url: '/chats',
       views: {
@@ -119,6 +129,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('welcome');
+  $urlRouterProvider.otherwise('tab/dash');
 
 });

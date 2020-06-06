@@ -8,6 +8,14 @@ angular.module('starter.controllers', [])
   }
 })
 
+.controller('ProductsCtrl', function($scope,$rootScope){
+  $rootScope.productos = [];
+  firebase.database().ref("productos").on("value", function(datos){
+    $rootScope.productos = datos.val();
+  })
+  console.log($rootScope.productos)
+})
+
   
 .controller('registerCtrl', function($scope) {
   var database = firebase.database();
@@ -35,33 +43,42 @@ angular.module('starter.controllers', [])
   .controller('welcomeCtrl', function($scope) {
   })
 
-.controller('DashCtrl', function($scope,$rootScope) {
+.controller('DashCtrl', function($scope,$rootScope,$state) {
   $rootScope.Categorias = [
     {
-      nombreCategoria: "TV",
-      imagen: "img/1.jpg"
-    },
-    {
-      nombreCategoria: "Celulares",
-      imagen: "img/2.jpg"
+      nombreCategoria: "Electronica",
+      imagen: "img/1.jpg",
+      descripcion: "Televisores, audio y reproductores"
     },
     {
       nombreCategoria: "Linea Blanca",
-      imagen: "img/3.jpg"
+      imagen: "img/2.jpg",
+      descripcion: "Refrigeración, estufas, lavadoras"
     },
     {
-      nombreCategoria: "Video Juegos",
-      imagen: "img/4.jpg"
+      nombreCategoria: "Celulares",
+      imagen: "img/3.jpg",
+      descripcion: "Tigo, Claro y Liberados"
     },
     {
-      nombreCategoria: "Computacion y Tablets",
-      imagen: "img/5.jpg"
+      nombreCategoria: "ElectroDomésticos",
+      imagen: "img/4.jpg",
+      descripcion: "Licuadoras, Planchas, Batidoras"
     },
     {
-      nombreCategoria: "Audifonos y Bocinas",
-      imagen: "img/6.jpg"
+      nombreCategoria: "Videojuegos",
+      imagen: "img/5.jpg",
+      descripcion: "PlayStatio, Xbox One, Pc Gaming "
+    },
+    {
+      nombreCategoria: "Cuidado Personal",
+      imagen: "img/6.jpg",
+      descripcion: "Dama, Caballero y salud"
     }
   ]
+  $scope.viewProduct= function(){
+    $state.go("tab.Products")
+  }
 })
 
 .controller('ChatsCtrl', function($scope, Chats) {

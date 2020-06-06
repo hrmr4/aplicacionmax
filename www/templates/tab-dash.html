@@ -1,11 +1,30 @@
-<ion-view view-title="Dashboard">
+<ion-view view-title="Tiendas Max">
   <ion-content class="padding">
     <div class="cotainer">
-      <div class="row " ng-repeat="c in Categorias">
-        <div class="col" style="background: url({{c.imagen}}); background-size: cover; height: 350px; ">
-          <p style=" font-size: 15px; font-style:italic; font-family: fantasy;"> {{c.nombreCategoria}}</p>
-          
+      <div class="row espacio" ng-repeat="c in Categorias" ng-click="viewProduct()">
+        <div class="col contenedor sinEs">
+          <div class="row sinEs">
+          	<div class="col col-25 centrado alto">
+          		<img src="{{c.imagen}}">
+          	</div>
+          	<div class="col col-60">
+          		<div class="row">
+          			<div class="col negrita">
+          				{{c.nombreCategoria}}
+          			</div>
+          		</div>
+          		<div class="row">
+          			<div class="col ajuste">
+          				{{c.descripcion}}
+          			</div>
+          		</div>
+          	</div>
+          	<div class="col col-10 tamIcon centrado">
+          		<i class="fas fa-angle-right"></i>
+          	</div>
+          </div>
         </div>
+
       </div>
     </div>
 

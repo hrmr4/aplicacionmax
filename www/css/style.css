@@ -1,1 +1,39 @@
 /* Empty. Add your own CSS if you like */
+*{
+	font-family: 'Montserrat', sans-serif;
+}
+.contenedor{
+	background-color: #E1E1E1;
+	border-radius: 5px;
+	height: 85px;
+}
+.espacio{
+	padding-bottom: 3% !important; 
+}
+.sinEs{
+	padding: 0;
+}
+.centrado{
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+}
+.alto{
+	height: 85px;
+}
+.ajuste{
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.negrita{
+	font-weight: bolder; 
+}
+.tamIcon{
+	font-size: 35px;
+	color: #9D9D9D;
+	cursor: pointer;
+}
+.abajo{
+	padding-top: 2% !important; 
+}
